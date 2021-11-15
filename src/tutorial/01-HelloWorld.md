@@ -7,6 +7,7 @@ function HelloWorld(props){
     //function must return something
     return (
         //return should tell React to render Hello World in the browser
+        
     );
 }
 ```
