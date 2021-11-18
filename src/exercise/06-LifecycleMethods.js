@@ -43,6 +43,13 @@ class CompanyProfile extends Component {
      *             .catch(error => console.log(error))
      * */
     componentDidMount() {
+        DataAPI.getCompanyProfile(this.props.stockTicker)
+            .then(data => {
+                this.setState({
+                    companyProfileInfo: data
+                })
+            })
+            .catch(e => console.log(e));
 
     }
 
